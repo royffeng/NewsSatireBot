@@ -1,15 +1,19 @@
 import praw
+import os
 #reddit api login credentials
-reddit = praw.Reddit(client_id = '<redacted>',
-                     client_secret = '<redacted>',
-                     username = 'AdvancedIQ',
-                     password = '<redacted>',
+reddit = praw.Reddit(client_id = os.environ["client_id"],
+                     client_secret = os.environ["client_secret"],
+                     username = os.environ["reddit_username"],
+                     password = os.environ["reddit_password"],
                      user_agent = 'NewsSatireBot')
 #import json
 #import time
 #import os
 
-subreddit = reddit.subreddit('testingground4bots')
+print("Bot is starting")
+print("Enter subreddit to operate within:")
+sub = input()
+subreddit = reddit.subreddit(sub)
 
 #summon phrase
 phrase = '!enlightenme'
