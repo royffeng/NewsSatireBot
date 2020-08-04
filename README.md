@@ -1,6 +1,8 @@
-# AdvancedIQ
-1). create reddit bot using praw
+# NewsSatireBot
+1). inspired by https://xkcd.com/1288/
 
-2). let the bot make high iq comments
+2). create reddit bot using praw
 
-3). profit???
+3). let the bot make high iq comments
+
+4). profit???
